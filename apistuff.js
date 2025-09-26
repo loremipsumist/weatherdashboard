@@ -8,7 +8,7 @@ $(document).ready(function() {
             return;
         }
 
-        let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+        let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}`;
 
         $.getJSON(apiUrl, function(data) {
             let weatherHTML = `
